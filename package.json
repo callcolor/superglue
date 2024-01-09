@@ -1,0 +1,27 @@
+{
+  "name": "superglue-mod-manager",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run pkg && npm run startsl",
+    "startfs": "cp c:\\users\\callcolor\\dev\\superglue\\build\\superglue-win.exe c:\\Progra~1\\Firestorm-Releasex64 && c:\\Progra~1\\Firestorm-Releasex64\\Firestorm-Releasex64.exe --leap superglue-win.exe",
+    "startsl": "cp c:\\users\\callcolor\\dev\\superglue\\build\\superglue-win.exe c:\\Progra~1\\SecondLifeViewer && c:\\Progra~1\\SecondLifeViewer\\SecondLifeViewer.exe --leap superglue-win.exe",
+    "pkg": "npm run build && pkg dist/superglue.js --out-path build --public"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.8.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "pkg": "^5.8.1",
+    "prettier": "2.7.1",
+    "ts-node": "^10.8.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
